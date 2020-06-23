@@ -6,7 +6,11 @@ const Home = () => (
   <div id='home'>
     <h1>Home</h1>
     <div className='cards'>
-      <Card title='Project Name' description='sjdasjbfasjbf adnskjafnskaj ahdsjabds baidjansdjka uhgakjsnkdna' />
+      <Card
+        url='/dark-theme'
+        title='Dark Theme'
+        description='Dark theme switch with cool animation.'
+      />
     </div>
   </div>
 );
