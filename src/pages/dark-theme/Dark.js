@@ -6,13 +6,33 @@ import { motion, useCycle } from 'framer-motion';
 const backgroundVariants = {
   light: (width) => ({
     clipPath: `circle(0px at ${width - 45}px 45px)`,
-    transition: { duration: 0.8 },
+    transition: { duration: 0.7, ease: 'easeOut' },
   }),
   dark: (width) => ({
     clipPath: `circle(${width * 1.8}px at ${width - 45}px 45px)`,
     backgroundColor: '#282c34',
-    transition: { duration: 0.8 },
+    transition: { duration: 0.7, ease: 'easeIn' },
   }),
+};
+
+const buttonVariants = {
+  light: {
+    color: '#FFFFFF',
+    backgroundColor: '#282C34',
+  },
+  dark: {
+    color: '#282c34',
+    backgroundColor: '#FFFFFF',
+  },
+};
+
+const textVariants = {
+  light: {
+    color: '#282c34',
+  },
+  dark: {
+    color: '#FFFFFF',
+  },
 };
 
 const Dark = () => {
@@ -27,11 +47,27 @@ const Dark = () => {
         className='background-theme'
       />
       <div id='dark-container'>
-        <button type='button' className='switcher' onClick={() => setLightOn()}>
+        <motion.button
+          type='button'
+          className='switcher'
+          onClick={() => setLightOn()}
+          variants={buttonVariants}
+          animate={(lightOn) ? 'light' : 'dark'}
+        >
           {(lightOn) ? <RiLightbulbLine size={25} /> : <RiLightbulbFlashLine size={25} />}
-        </button>
-        <h1>Dark Theme Switch</h1>
-        <h3>Press the lamp to switch between light and dark theme.</h3>
+        </motion.button>
+        <motion.h1
+          variants={textVariants}
+          animate={(lightOn) ? 'light' : 'dark'}
+        >
+          Dark Theme Switch
+        </motion.h1>
+        <motion.h3
+          variants={textVariants}
+          animate={(lightOn) ? 'light' : 'dark'}
+        >
+          Press the lamp to switch between light and dark theme.
+        </motion.h3>
       </div>
     </>
   );
