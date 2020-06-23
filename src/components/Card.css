@@ -1,0 +1,19 @@
+div.card {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin: 0px 10px 10px 10px;
+  padding: 1.25rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+div.card h3 {
+  color: #282c34;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+}
+
+div.card p {
+  line-height: 1.2;
+  color: #282c34a1;
+}
