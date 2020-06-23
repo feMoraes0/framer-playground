@@ -39,3 +39,11 @@
   height: 100%;
   width: 100%;
 }
+
+.back-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}

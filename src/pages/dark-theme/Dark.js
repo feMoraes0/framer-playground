@@ -1,7 +1,8 @@
 import React from 'react';
 import './Dark.css';
-import { RiLightbulbFlashLine, RiLightbulbLine } from 'react-icons/ri';
+import { RiArrowLeftLine, RiLightbulbFlashLine, RiLightbulbLine } from 'react-icons/ri';
 import { motion, useCycle } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const backgroundVariants = {
   light: (width) => ({
@@ -16,23 +17,13 @@ const backgroundVariants = {
 };
 
 const buttonVariants = {
-  light: {
-    color: '#FFFFFF',
-    backgroundColor: '#282C34',
-  },
-  dark: {
-    color: '#282c34',
-    backgroundColor: '#FFFFFF',
-  },
+  light: { color: '#FFFFFF', backgroundColor: '#282C34' },
+  dark: { color: '#282c34', backgroundColor: '#FFFFFF' },
 };
 
 const textVariants = {
-  light: {
-    color: '#282c34',
-  },
-  dark: {
-    color: '#FFFFFF',
-  },
+  light: { color: '#282c34' },
+  dark: { color: '#FFFFFF' },
 };
 
 const Dark = () => {
@@ -47,6 +38,14 @@ const Dark = () => {
         className='background-theme'
       />
       <div id='dark-container'>
+        <Link to='/' className='back-button'>
+          <motion.div
+            variants={textVariants}
+            animate={(lightOn) ? 'light' : 'dark'}
+          >
+            <RiArrowLeftLine size={30} />
+          </motion.div>
+        </Link>
         <motion.button
           type='button'
           className='switcher'
