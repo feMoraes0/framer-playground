@@ -3,6 +3,17 @@ import './Home.css';
 import { motion } from 'framer-motion';
 import Card from '../components/Card';
 
+const homeVariants = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 1,
+    },
+  },
+};
+
 const titleVariants = {
   initial: { y: '-100vh' },
   animate: {
@@ -10,27 +21,39 @@ const titleVariants = {
     transition: {
       type: 'spring',
       stiffness: 75,
+      duration: 1,
     },
   },
 };
 
+const cardsVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+};
+
 const Home = () => (
-  <div id='home'>
+  <motion.div
+    id='home'
+    variants={homeVariants}
+    initial='initial'
+    animate='animate'
+  >
     <motion.h1
       variants={titleVariants}
-      initial='initial'
-      animate='animate'
     >
       Home
     </motion.h1>
-    <div className='cards'>
+    <motion.div
+      className='cards'
+      variants={cardsVariants}
+    >
       <Card
         url='/dark-theme'
         title='Dark Theme'
         description='Dark theme switch with cool animation.'
       />
-    </div>
-  </div>
+    </motion.div>
+  </motion.div>
 );
 
 export default Home;
