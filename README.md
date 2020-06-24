@@ -1,7 +1,8 @@
 <h1 align="center">Framer Playground</h1>
 
 <p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/framer-playground/dark-theme.gif"/>
+  <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/framer-playground/dark-theme.gif"/>
+  <img width="400" src="https://github.com/feMoraes0/project-prints/blob/master/framer-playground/home.gif"/>
 </p>
 
 ## :rocket: Knowledges
