@@ -9,7 +9,7 @@ const homeVariants = {
     opacity: 1,
     transition: {
       when: 'beforeChildren',
-      staggerChildren: 1,
+      staggerChildren: 0.5,
     },
   },
 };
@@ -28,7 +28,13 @@ const titleVariants = {
 
 const cardsVariants = {
   initial: { opacity: 0 },
-  animate: { opacity: 1 },
+  animate: {
+    opacity: 1,
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 0.2,
+    },
+  },
 };
 
 const Home = () => (
