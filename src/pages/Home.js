@@ -58,6 +58,11 @@ const Home = () => (
         title='Dark Theme'
         description='Dark theme switch with cool animation.'
       />
+      <Card
+        url='/background-words'
+        title='Background Words'
+        description='Animation when page is loaded on screen.'
+      />
     </motion.div>
   </motion.div>
 );
