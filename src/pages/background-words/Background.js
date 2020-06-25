@@ -10,7 +10,8 @@ const Background = () => (
       <motion.h1>BACK 03</motion.h1>
     </motion.div>
     <motion.div className='front-side'>
-      <motion.h1>frontal text</motion.h1>
+      <motion.h1>frontal</motion.h1>
+      <motion.h1>text</motion.h1>
     </motion.div>
   </div>
 
