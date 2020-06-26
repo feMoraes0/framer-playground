@@ -4,10 +4,16 @@
   <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/framer-playground/dark-theme.gif"/>
   <img width="400" src="https://github.com/feMoraes0/project-prints/blob/master/framer-playground/home.gif"/>
 </p>
+<p align="center">
+  <img width="400" src="https://github.com/feMoraes0/project-prints/blob/master/framer-playground/background-words.gif"/>
+</p>
 
 ## :rocket: Knowledges
  - `ReactJS`
  - `Framer Motion`
+ - `React Router`
+ - `React Icons`
+ - `Eslint`
 
 ## :paperclip: Useful Links
  - [Framer Motion](https://www.framer.com/motion/)
