@@ -38,13 +38,20 @@ div.front-side {
   justify-content: center;
 }
 
-div.front-side span {
+div.front-side div.word {
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+}
+
+div.front-side div.word div {
   font-family: 'Kalam', cursive !important;
   font-weight: bolder;
-  font-size: 18vh;
-  line-height: 20vh;
-  color: #FFF;
-  width: 50%;
+  color: #FFF !important;
   text-transform: uppercase;
-  margin-left: 10vw;
+  padding: 0px 8px;
+  font-size: 19vh;
+  height: 19vh;
+  display: flex;
+  align-items: center;
 }
