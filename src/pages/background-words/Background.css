@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
 div#background {
   width: 100vw;
   height: 100vh;
@@ -14,13 +17,14 @@ div.back-side {
   justify-content: center;
 }
 
-div.back-side h1 {
-  font-size: 28vh;
-  line-height: 30vh;
+div.back-side span {
+  font-size: 25vh;
+  line-height: 28vh;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   text-align: right;
-  color: #1D1F20;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: 'Notable', sans-serif !important;
 }
 
 div.front-side {
@@ -34,8 +38,9 @@ div.front-side {
   justify-content: center;
 }
 
-div.front-side h1 {
-  font-family: 'Courier New', Courier, monospace;
+div.front-side span {
+  font-family: 'Kalam', cursive !important;
+  font-weight: bolder;
   font-size: 18vh;
   line-height: 20vh;
   color: #FFF;

@@ -2,7 +2,7 @@ import React from 'react';
 import './Background.css';
 import { motion } from 'framer-motion';
 
-const backSizeVariants = {
+const backSideVariants = {
   initial: {
     opacity: 0,
   },
@@ -16,7 +16,7 @@ const backSizeVariants = {
   },
 };
 
-const backSizeTextVariants = {
+const backSideTextVariants = {
   initial: { y: '-100vh' },
   animate: {
     y: 0,
@@ -29,18 +29,18 @@ const backSizeTextVariants = {
 const Background = () => (
   <div id='background'>
     <motion.div
-      variants={backSizeVariants}
+      variants={backSideVariants}
       initial='initial'
       animate='animate'
       className='back-side'
     >
-      <motion.h1 variants={backSizeTextVariants}>BACK 01</motion.h1>
-      <motion.h1 variants={backSizeTextVariants}>BACK 02</motion.h1>
-      <motion.h1 variants={backSizeTextVariants}>BACK 03</motion.h1>
+      <motion.span variants={backSideTextVariants}>TESTING</motion.span>
+      <motion.span variants={backSideTextVariants}>REACTJS</motion.span>
+      <motion.span variants={backSideTextVariants}>ANIMATION</motion.span>
     </motion.div>
     <motion.div className='front-side'>
-      <motion.h1>frontal</motion.h1>
-      <motion.h1>text</motion.h1>
+      <motion.span>framer</motion.span>
+      <motion.span>motion</motion.span>
     </motion.div>
   </div>
 
