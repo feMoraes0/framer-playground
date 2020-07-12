@@ -6,6 +6,7 @@
 </p>
 <p align="center">
   <img width="400" src="https://github.com/feMoraes0/project-prints/blob/master/framer-playground/background-words.gif"/>
+  <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/framer-playground/hidden-menu.gif"/>
 </p>
 
 ## :rocket: Knowledges
