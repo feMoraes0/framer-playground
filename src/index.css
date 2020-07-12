@@ -3,8 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Mallanna', sans-serif;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
+}
+
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 body {

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Dark from './pages/dark-theme/Dark';
 import Background from './pages/background-words/Background';
+import HiddenMenu from './pages/hidden-menu/HiddenMenu';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +20,9 @@ ReactDOM.render(
         </Route>
         <Route path='/background-words'>
           <Background />
+        </Route>
+        <Route path='/hidden-menu'>
+          <HiddenMenu />
         </Route>
       </Switch>
     </Router>

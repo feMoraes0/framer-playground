@@ -63,6 +63,11 @@ const Home = () => (
         title='Background Words'
         description='Animation when page is loaded on screen.'
       />
+      <Card
+        url='/hidden-menu'
+        title='Hidden Menu'
+        description='Menu animation based on mobile style.'
+      />
     </motion.div>
   </motion.div>
 );
